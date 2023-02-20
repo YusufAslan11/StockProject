@@ -10,20 +10,20 @@ public class ManagementMenu {
             System.out.println("▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓");
             System.out.println("▓▓▓▓▓▓   WAREHOUSE MANAGEMENT MENU   ▓▓▓▓▓▓");
             System.out.println("▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓");
-            System.out.println("▓▓▓     1- Product Describe             ▓▓▓");
+            System.out.println("▓▓▓     1- Define Product               ▓▓▓");
             System.out.println("▓▓▓     2- Product List                 ▓▓▓");
-            System.out.println("▓▓▓     3- Stock Entry Process          ▓▓▓");
-            System.out.println("▓▓▓     4- Stock Reduce Process         ▓▓▓");
-            System.out.println("▓▓▓     5- Stock Shelf Process          ▓▓▓");
+            System.out.println("▓▓▓     3- Stock Entry Transactions     ▓▓▓");
+            System.out.println("▓▓▓     4- Stock Reduce Transactions    ▓▓▓");
+            System.out.println("▓▓▓     5- Stock Shelf Transactions     ▓▓▓");
             System.out.println("▓▓▓     Q- Exit                         ▓▓▓");
             System.out.println("▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓");
-            System.out.print("          Your Choose....:  ");
+            System.out.print("          Your Choice....:  ");
 
             select = input.next().toUpperCase();
 
             switch (select) {
                 case "1":
-                    met.productDescribe();
+                    met.defineProduct();
                     break;
                 case "2":
                     met.productList();

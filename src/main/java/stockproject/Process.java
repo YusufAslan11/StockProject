@@ -9,7 +9,7 @@ public class Process {
     static int quantity = 0;
     static String shelf = "-";
 
-    public void productDescribe() {
+    public void defineProduct() {
 
         System.out.print("Enter a product name...:");
         String prdName = input.next();
@@ -71,7 +71,7 @@ public class Process {
                 switch (doYouWantAdd) {
                     case "Y":
                         Process met = new Process();
-                        met.productDescribe();
+                        met.defineProduct();
                         break;
                     case "N":
                         System.out.println("EXIT");
@@ -103,7 +103,7 @@ public class Process {
                 met.productList();
 
         } else {
-            System.out.println("There is not product in the stock");}
+            System.out.println("The product you are looking for is not in the stock.");}
 
     }
 
@@ -115,6 +115,8 @@ public class Process {
             String newShelf=input.next();
 
             productlist.get(findId).setShelf(newShelf);
+            Process met = new Process();
+            met.productList();
 
         }else{
             System.out.println("There is no product in the product list");
